@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('updates', url='https:/t.me/JosProjects')
+            InlineKeyboardButton('updates', url='https://t.me/join8infinity8')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -49,7 +49,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('👉 ⚠️ Press me... 🥰 👈', url="https://t.me/josprojects")
+                InlineKeyboardButton('👉 ⚠️ Press me... 🥰 👈', url="https://t.me/join8infinity8")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
@@ -78,7 +78,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
+            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>'
             reply_markup=reply_markup,
         )
 
